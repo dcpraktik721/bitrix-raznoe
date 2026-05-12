@@ -1,0 +1,34 @@
+{
+    "check_date": "2026-05-12",
+    "check_time_utc": "11:33-11:35",
+    "server": {
+          "name": "Wise Jackdaw",
+          "ip": "5.42.104.148",
+          "hostname": "prod.praktik72.ru",
+          "os": "CentOS Stream release 9",
+          "kernel": "5.14.0-681.el9.x86_64",
+          "bitrix_va_version": "9.0.9",
+          "memory_kb": 1748240,
+          "node": "kvmnvm-634"
+    },
+    "access": {
+          "method": "timeweb_web_serial_console",
+          "ssh_port_22_tested": false,
+          "console_login": "SUCCESS",
+          "user": "root"
+    },
+    "checks": {
+          "bitrix_prolog": "BITRIX_PROLOG_FOUND",
+          "repo_search": {
+                  "import_staging_service_page_php": "NOT_FOUND",
+                  "rollback_delete_staging_element_php": "NOT_FOUND",
+                  "mvp3_merge_dir": "NOT_FOUND",
+                  "production_page_merged_json": "NOT_FOUND"
+          },
+          "sha256_all_match": false,
+          "sha256_skip_reason": "files_not_found"
+    },
+    "verdict": "REPO_MISSING_ON_SERVER",
+    "no_changes_made_to_server": true,
+    "no_secrets_in_report": true
+}
